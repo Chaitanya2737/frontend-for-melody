@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #2AA7FF;
+}
+.icon{
+    font-size: 40px;
+}
+
+
+.text{
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    /* font-size: 25px; */
+}
+
+.list-ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.list-ul > li{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.list-ul  .list-size{
+font-size: 20px;
+font-weight: 500;
+}
+
+.list-ul .list-button{
+    padding: 10px;
+    
+    border: none;
+    color: #fff;
+    background-color: #2AA7FF;
+    border-radius:10px ;
+    font-weight: 500;
+    font-size: 17px;
+}
