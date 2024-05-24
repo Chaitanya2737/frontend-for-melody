@@ -31,6 +31,14 @@ export { default as Stethoscope } from './Specialisation/Stethoscope.png';
 
 export { default as XRay } from './Specialisation/X-Ray.png';
 
+export { default as doctor1 } from './Doctors/div.med-stl-3-photo-inner (2).png';
+
+export { default as doctor2} from './Doctors/div.med-stl-3-photo-inner.png';
+
+export { default as doctor3 } from './Doctors/2.png';
+
+
+
 
 
 
