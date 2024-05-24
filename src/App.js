@@ -5,6 +5,9 @@ import Section from './Components/Section/Section';
 import Wrapper from './Components/Wrapper/Wrapper';
 import "./App.css"
 import Search from './Components/Search/Search';
+import Swapper from './Components/Swapper/Swapper';
+import Fotter from './Components/footer/Fotter';
+import Specialisation from './Components/SpecialisationSection/Specialisation';
 function App() {
   return (
 
@@ -13,6 +16,9 @@ function App() {
 
     <Wrapper />
     <Search />
+    <Swapper />
+    <Specialisation />
+    <Fotter />
     </div>
   );
 }
