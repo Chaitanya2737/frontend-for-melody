@@ -5,9 +5,7 @@ const SwapperContent = ({data}) => {
 
   return (
     <>
-     
         <img src={data} alt="image is not found" />
-     
     </>
   )
 }

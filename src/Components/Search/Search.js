@@ -92,7 +92,7 @@ const Search = () => {
 
 
         <Box sx={{   pb :5}}>
-          <Typography variant="h6" sx={{ textAlign: "center" , marginBottom : 2 }} color="black">
+          <Typography variant="h5" sx={{ textAlign: "center" , marginBottom : 1,fontWeight:"500", letterSpacing:2 , color:"#102851" }}>
             You may be looking for
           </Typography>
 
