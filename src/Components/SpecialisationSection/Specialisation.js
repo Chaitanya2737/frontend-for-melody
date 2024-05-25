@@ -23,7 +23,7 @@ const Specialisation = () => {
   return (
     < div className='background'>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container style={{maxWidth :"1300px"}}>
         <Box sx={{ flexGrow: 1 }}>
           <Typography sx={{ textAlign: "center", marginBottom: 7, pt:7}} variant="h3" color="#1B3C74">
             Find by specialization

@@ -9,6 +9,7 @@ import Swapper from './Components/Swapper/Swapper';
 import Fotter from './Components/footer/Fotter';
 import Specialisation from './Components/SpecialisationSection/Specialisation';
 import Specialist from './Components/SpecialistSection/Specialist';
+import Caring from './Components/CaringSection/caring';
 function App() {
   return (
 
@@ -20,6 +21,7 @@ function App() {
     <Swapper />
     <Specialisation />
     <Specialist />
+    <Caring />
     <Fotter />
     </div>
   );
