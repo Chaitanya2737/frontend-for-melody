@@ -10,6 +10,9 @@ import Fotter from './Components/footer/Fotter';
 import Specialisation from './Components/SpecialisationSection/Specialisation';
 import Specialist from './Components/SpecialistSection/Specialist';
 import Caring from './Components/CaringSection/caring';
+import Blog from './Components/Blog & News section/Blog';
+import Family from './Components/Family section/Family';
+import QuestionAndAnswer from './Components/Question & answer section/QuestionAnd Answer';
 function App() {
   return (
 
@@ -22,6 +25,9 @@ function App() {
     <Specialisation />
     <Specialist />
     <Caring />
+    <Blog />
+    <Family />
+    <QuestionAndAnswer/>
     <Fotter />
     </div>
   );

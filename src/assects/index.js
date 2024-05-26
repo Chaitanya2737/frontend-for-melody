@@ -43,5 +43,26 @@ export { default as patient2 } from './patient caring/image-02-1.png.png';
 
 export { default as Frame } from './Frame (1).png';
 
+export { default as Blogs } from './image 3.png';
+
+export { default as rebecca } from './doctor2-80x80.jpg.png';
+
+export { default as Drugstore1 } from './family/Drugstore (2).png';
+
+export { default as Hospital1 } from './family/Hospital (1).png';
+
+export { default as svg1 } from './family/svg.h2d-2dcead65.png';
+
+export { default as svg2 } from './family/svg.h2d-af745bd1.png';
+
+export { default as image21 } from './Image-21-1.png.png';
+
+
+
+
+
+
+
+
 
 

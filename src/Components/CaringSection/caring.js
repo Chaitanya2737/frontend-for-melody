@@ -27,6 +27,10 @@ const Caring = () => {
                       border: "2px solid white",
                       position: "absolute",
                       right: "30px",
+                      maxWidth:"100%",
+                      minWidth:"50%",
+                      maxWidth:"100%",
+                      minWidth:"50%"
                     }}
                     src={patient1}
                     alt=""
@@ -35,12 +39,14 @@ const Caring = () => {
                     sx={{
                       backgroundColor: "#fff",
                       borderRadius: 2,
-                      width: "45%",
+                     
+                      width:"45%",
+                      
                       padding: 1,
                       position: "absolute",
                       left: 10,
                       top: "70px",
-                      zIndex:1
+                      
                     }}
                   >
                     <Box
@@ -76,6 +82,10 @@ const Caring = () => {
                       position: "absolute",
                       left: 0,
                       bottom: 10,
+                      maxWidth:"100%",
+                      minWidth:"50%",
+                      maxWidth:"100%",
+                      minWidth:"50%"
                     }}
                     src={patient2}
                     alt=""

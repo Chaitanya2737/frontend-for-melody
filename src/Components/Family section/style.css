@@ -1,0 +1,5 @@
+.background{
+    background: rgb(232,241,255);
+    background: linear-gradient(11deg, rgba(216,232,255,1) 46%, rgba(252,253,255,1) 100%);
+    margin-top: 10px;
+}
