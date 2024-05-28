@@ -14,7 +14,7 @@ const Wrapper = () => {
     <CssBaseline />
     <Container  style={{ maxWidth: '1300px' }}>
       <Box sx={{position :"relative"}}>
-        {/* <Navbar /> */}
+        <Navbar />
         <Hero />
     </Box>
     </Container>

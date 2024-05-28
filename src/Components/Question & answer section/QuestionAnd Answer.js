@@ -1,9 +1,7 @@
 import React from "react";
 import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Button from "@mui/material/Button";
 import { FaPlus } from "react-icons/fa";
 import { Container, CssBaseline, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -48,7 +46,7 @@ const QuestionAndAnswer = () => {
                 </Typography>
 
                 <Typography  variant="h2" color="#1B3C74">
-                Frequently Asked Questions
+                Read Our Latest News
                 </Typography>
             </Box>
         <Box sx={{ flexGrow: 1 }}>

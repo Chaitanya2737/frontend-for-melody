@@ -57,6 +57,12 @@ export { default as svg2 } from './family/svg.h2d-af745bd1.png';
 
 export { default as image21 } from './Image-21-1.png.png';
 
+export { default as image22 } from './image 22.png';
+
+export { default as sensodyne } from './sensodyne_dweb.png.png';
+
+
+
 
 
 
