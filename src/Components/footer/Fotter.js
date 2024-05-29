@@ -24,7 +24,7 @@ const Footer = () => {
   const socialIcons = [<FaFacebook />, <FaInstagram />, <IoLogoYoutube />, <FaPinterest />];
 
   return (
-    <div style={{backgroundColor:"#1B3C74"}}>
+    <div style={{backgroundColor:"#1B3C74" , marginTop:"20px", paddingBottom:"40px"}}>
       <Container style={{ maxWidth: "1300px" }}>
         <Box sx={{ flexGrow: 1  }}>
           <Grid container spacing={2} sx={{pt:5}}>

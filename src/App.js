@@ -6,6 +6,7 @@ import Section from './Components/Section/Section';
 import Wrapper from './Components/Wrapper/Wrapper';
 import './App.css';
 import SectionSearch from './Components/SectionSearch';
+import Footer from './Components/footer/Fotter';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             </Route>
             {/* Add other routes here as needed */}
           </Switch>
+          <Footer />
     </div>
   );
 }
