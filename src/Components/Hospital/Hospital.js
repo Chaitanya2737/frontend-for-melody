@@ -10,7 +10,7 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "none",
 }));
 
-const Hospital = ({ data }) => {
+const Hospital = ({ data , visible}) => {
   if (!data || data.length === 0) {
     return (
       <Typography variant="h6" color="textSecondary">

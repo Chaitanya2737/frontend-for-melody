@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Box, Button, Container, CssBaseline, Grid, Paper, Typography, InputLabel, InputAdornment, OutlinedInput, FormControl } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { FaSearch } from "react-icons/fa";
-import { Ambulance, Capsule, doctors, Drugstore, hospital as hospitalIcon } from "../../assects";
-import Hospital from "../Hospital/Hospital";
+import { Ambulance, Capsule, doctors, Drugstore, hospital as hospitalIcon } from "../../assects"; // Importing image assets
+import Hospital from "../Hospital/Hospital"; // Importing Hospital component
 import axios from 'axios';
 import "./search.css";
-import { fetchdata } from "../../api/api";
+import { fetchdata } from "../../api/api"; // Importing fetchdata function from api module
 
+// Custom styled Paper component
 const StyledPaper = styled(Paper)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
@@ -17,6 +18,7 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
   flexWrap: "wrap"
 }));
 
+// Array of items for search suggestions
 const items = [
   { src: doctors, label: 'Doctor' },
   { src: Drugstore, label: 'Lab' },
@@ -25,15 +27,19 @@ const items = [
   { src: Ambulance, label: 'Ambulance' },
 ];
 
+// Search component
 const Search = ({ visible }) => {
+  // State for holding hospital data and input values
   const [hospitals, setHospitals] = useState([]);
   const [input, setInput] = useState({ state: "", city: "" });
 
+  // Function to fetch hospital data based on input values
   const data = async () => {
-   const res =  await fetchdata(input.state , input.city);
-   setHospitals(res)
+    const res =  await fetchdata(input.state , input.city);
+    setHospitals(res);
   };
 
+  // Event handler for input change
   const handleChange = (e) => {
     setInput((prevInput) => ({
       ...prevInput,
@@ -41,10 +47,12 @@ const Search = ({ visible }) => {
     }));
   };
 
+  // Event handler for search button click
   const handleSearch = () => {
     data();
   };
 
+  // Effect hook to fetch data on component mount
   useEffect(() => {
     handleSearch();
   }, []);
@@ -53,9 +61,11 @@ const Search = ({ visible }) => {
     <div className="search-background">
       <CssBaseline />
       <Container style={{ maxWidth: "1300px", boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px", backgroundColor: '#fff', borderRadius: "10px" }}>
+        {/* Input fields for state and city */}
         <Box sx={{ backgroundColor: '#fff', padding: 2, display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
           <Grid container spacing={2} justifyContent="space-evenly">
             <Grid item xs={12} sm={6} md={3}>
+              {/* State input field */}
               <StyledPaper>
                 <FormControl fullWidth sx={{ m: 1 }}>
                   <InputLabel htmlFor="outlined-adornment-state">State</InputLabel>
@@ -75,6 +85,7 @@ const Search = ({ visible }) => {
               </StyledPaper>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
+              {/* City input field */}
               <StyledPaper>
                 <FormControl fullWidth sx={{ m: 1 }}>
                   <InputLabel htmlFor="outlined-adornment-city">City</InputLabel>
@@ -94,6 +105,7 @@ const Search = ({ visible }) => {
               </StyledPaper>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
+              {/* Search button */}
               <StyledPaper>
                 <Button
                   variant="contained"
@@ -110,6 +122,7 @@ const Search = ({ visible }) => {
           </Grid>
         </Box>
 
+        {/* Display search suggestions */}
         {visible && (
           <Box sx={{ pb: 5 }}>
             <Typography variant="h5" sx={{ textAlign: "center", marginBottom: 1, fontWeight: 500, letterSpacing: 2, color: "#102851" }}>
@@ -118,6 +131,7 @@ const Search = ({ visible }) => {
             <Grid container sx={{ display: 'flex', justifyContent: 'center' }} spacing={6}>
               {items.map((item, index) => (
                 <Grid item xs={6} sm={5} md={4} lg={2} key={index}>
+                  {/* Search suggestion item */}
                   <Box
                     sx={{
                       border: item.border || "none",
@@ -142,7 +156,8 @@ const Search = ({ visible }) => {
           </Box>
         )}
 
-        <Hospital data={hospitals} />
+        {/* Render hospital data */}
+        <Hospital data={hospitals}  />
       </Container>
     </div>
   );
