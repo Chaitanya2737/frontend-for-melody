@@ -16,6 +16,10 @@ To see the live version of the Melody frontend, you can visit the project demo:
 
 - [Project Demo](https://melodys-three.vercel.app/)
 
+## Responsiveness
+
+The Melody frontend is designed to be responsive and compatible with various devices and screen sizes. Whether you're accessing it from a desktop, laptop, tablet, or smartphone, the user interface adapts to provide an optimal viewing experience.
+
 ## Installation
 
 To set up the Melody frontend locally, follow these steps:
