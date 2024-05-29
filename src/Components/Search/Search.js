@@ -6,6 +6,7 @@ import { Ambulance, Capsule, doctors, Drugstore, hospital as hospitalIcon } from
 import Hospital from "../Hospital/Hospital";
 import axios from 'axios';
 import "./search.css";
+import { fetchdata } from "../../api/api";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   display: "flex",
@@ -28,13 +29,9 @@ const Search = ({ visible }) => {
   const [hospitals, setHospitals] = useState([]);
   const [input, setInput] = useState({ state: "", city: "" });
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(`https://meddata-backend.onrender.com/data?state=${input.state}&city=${input.city}`);
-      setHospitals(response.data);
-    } catch (error) {
-      console.error(error);
-    }
+  const data = async () => {
+   const res =  await fetchdata(input.state , input.city);
+   setHospitals(res)
   };
 
   const handleChange = (e) => {
@@ -45,7 +42,7 @@ const Search = ({ visible }) => {
   };
 
   const handleSearch = () => {
-    fetchData();
+    data();
   };
 
   useEffect(() => {

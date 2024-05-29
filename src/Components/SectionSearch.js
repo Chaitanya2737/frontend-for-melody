@@ -7,9 +7,8 @@ import QuestionAndAnswer from './Question & answer section/QuestionAnd Answer'
 const SectionSearch = () => {
   return (
     <Container style={{maxWidth:"1300px"}}> 
-{/* <Navbar /> */}
+<Navbar />
 <Search visible={false}/>
-
 <QuestionAndAnswer/>
     </Container>
   )

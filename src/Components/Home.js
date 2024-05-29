@@ -11,6 +11,7 @@ import Blog from './Blog & News section/Blog'
 import Family from './Family section/Family'
 import QuestionAndAnswer from './Question & answer section/QuestionAnd Answer'
 import Fotter from './footer/Fotter'
+import Download from './Download section/Download';
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
     <Blog />
     <Family />
     <QuestionAndAnswer/>
+    <Download />
     <Fotter />
     </div>
   )

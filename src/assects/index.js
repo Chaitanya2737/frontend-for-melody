@@ -61,6 +61,7 @@ export { default as image22 } from './image 22.png';
 
 export { default as sensodyne } from './sensodyne_dweb.png.png';
 
+export { default as Vector } from './Vector (2).png';
 
 
 
