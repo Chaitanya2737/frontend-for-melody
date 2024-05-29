@@ -6,9 +6,15 @@ This repository contains the frontend codebase for Melody, a music streaming app
 
 The design for the Melody frontend was created using Figma. You can view the design and prototypes by accessing the Figma file:
 
-- [Figma Design](https://www.figma.com/design/BLZw4DOia4hXyqt8X1Yuyl/Desktop-Designs-%3A-Healthcare-Consultation-(Community)?node-id=0-1&t=2aFXHKvdMvmGsLbY-0)
+- [Figma Design](https://www.figma.com/file/your-figma-file-id/Your-Design-Title)
 
 Feel free to explore the design and provide feedback or suggestions.
+
+## Site Hosting
+
+To see the live version of the Melody frontend, you can visit the project demo:
+
+- [Project Demo](https://melodys-three.vercel.app/)
 
 ## Installation
 
@@ -44,4 +50,4 @@ The Melody frontend is open-source software licensed under the [MIT License](LIC
 
 ## Contact
 
-For questions or inquiries about the Melody frontend, please contact [chaitanyasatarkar123@gmail.com](mailto:chaitanyasatarkar123@gmail.com).
+For questions or inquiries about the Melody frontend, please contact [your@email.com](mailto:your@email.com).
